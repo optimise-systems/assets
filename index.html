@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Redirecting…</title>
+
+    <!-- immediate meta refresh fallback -->
+    <meta http-equiv="refresh" content="0; url=https://optimise.systems/" />
+
+    <!-- optional: add a canonical and SEO hint -->
+    <link rel="canonical" href="https://optimise.systems/" />
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0
+        }
+
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #111;
+            background: #fff
+        }
+
+        .wrap {
+            text-align: center;
+            padding: 24px;
+            max-width: 720px
+        }
+
+        a {
+            color: #111;
+            text-decoration: underline;
+            font-weight: 600
+        }
+
+        .sub {
+            color: #6b7280;
+            margin-top: 8px;
+            font-size: 0.95rem
+        }
+    </style>
+
+    <script>
+        // Prefer location.replace to avoid adding this page to the session history.
+        // This is a client-side redirect only.
+        (function () {
+            var target = "https://optimise.systems/assets";
+            // Use replace() so "back" doesn't return to the redirecting page.
+            if (window.location.href !== target) {
+                window.location.replace(target);
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="wrap" role="main" aria-live="polite">
+        <h1>Redirecting to optimise.systems…</h1>
+        <p class="sub">If you are not redirected automatically, <a href="https://optimise.systems/">click here to
+                continue</a>.</p>
+    </div>
+</body>
+
+</html>
